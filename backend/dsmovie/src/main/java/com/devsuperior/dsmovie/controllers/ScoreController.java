@@ -17,7 +17,11 @@ public class ScoreController {
 	@Autowired
 	private ScoreService service;
 
+<<<<<<< HEAD
 	@PutMapping
+=======
+	@PutMapping(value = "/{id}")
+>>>>>>> 23f394f55ef3b3eb821b380d4ea5139048f5ca1a
 	public MovieDTO saveScore(@RequestBody ScoreDTO dto) {
 		MovieDTO movieDTO = service.saveScore(dto);
 		return movieDTO;
